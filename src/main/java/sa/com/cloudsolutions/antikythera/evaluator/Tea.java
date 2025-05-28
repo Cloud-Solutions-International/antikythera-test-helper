@@ -13,20 +13,24 @@ public class Tea {
     private Boolean ceylon;
     private boolean green;
 
+    @SuppressWarnings("java:S106")
+    public void run() {
+        setOrigin("Great Western");
+        setQuantity(100);
+        setOrganic(true);
+        setIsBop(true);
+        setCeylon(true);
+        setGreen(false);
+
+        System.out.println("Tea Origin: " + getOrigin());
+        System.out.println("Tea Quantity: " + getQuantity());
+        System.out.println("Is Organic: " + isOrganic());
+        System.out.println("Is BOP: " + getIsBop());
+        System.out.println("Is Ceylon: " + getCeylon());
+        System.out.println("Is Green: " + isGreen());
+    }
     public static void main(String[] args) {
         Tea tea = new Tea();
-        tea.setOrigin("Great Western");
-        tea.setQuantity(100);
-        tea.setOrganic(true);
-        tea.setIsBop(true);
-        tea.setCeylon(true);
-        tea.setGreen(false);
-
-        System.out.println("Tea Origin: " + tea.getOrigin());
-        System.out.println("Tea Quantity: " + tea.getQuantity());
-        System.out.println("Is Organic: " + tea.isOrganic());
-        System.out.println("Is BOP: " + tea.getIsBop());
-        System.out.println("Is Ceylon: " + tea.getCeylon());
-        System.out.println("Is Green: " + tea.isGreen());
+        tea.run();
     }
 }
