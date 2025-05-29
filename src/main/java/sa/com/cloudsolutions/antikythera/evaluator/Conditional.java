@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+@SuppressWarnings("java:S106")
 public class Conditional {
     @SuppressWarnings("unused")
     public void conditional1(Person person) {
@@ -265,6 +266,15 @@ public class Conditional {
             else {
                 System.out.println("Antikythera!");
             }
+        }
+    }
+
+    public void drinkable(Tea cup) {
+        if (cup.getOrigin().equals("Great Western")) {
+            System.out.println(cup.getCeylon() ? "Very good!" : "good!");
+        }
+        else {
+            System.out.println("Not drinkable!");
         }
     }
 
