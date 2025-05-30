@@ -293,6 +293,7 @@ public class Conditional {
             System.out.println("Other!");
         }
     }
+
     public void stringCompare(String a) {
         if (a.equals("Antikythera")) {
             System.out.println("AK!");
@@ -302,6 +303,15 @@ public class Conditional {
         }
         else {
             System.out.println("Donno!");
+        }
+    }
+
+    public void clarendon(Tea cup) {
+        if (cup.getOrigin().equals("Clarendon")) {
+            System.out.println("good!");
+        }
+        else {
+            System.out.println("Not drinkable!");
         }
     }
 
