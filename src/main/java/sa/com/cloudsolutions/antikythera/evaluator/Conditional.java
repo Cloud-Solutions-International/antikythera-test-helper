@@ -1,5 +1,6 @@
 package sa.com.cloudsolutions.antikythera.evaluator;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -266,6 +267,51 @@ public class Conditional {
             else {
                 System.out.println("Antikythera!");
             }
+        }
+    }
+
+    public void fileCompare(File f) {
+        if (f.equals(new File("/tmp"))) {
+            System.out.println("tmp!");
+        }
+        if (f == null) {
+            System.out.println("Null!");
+        }
+        else {
+            System.out.println("Other!");
+        }
+    }
+
+    public void numberCompare(Integer a){
+        if (a.equals(1)) {
+            System.out.println("One!");
+        }
+        else if (a.equals(2)) {
+            System.out.println("Two!");
+        }
+        else {
+            System.out.println("Other!");
+        }
+    }
+
+    public void stringCompare(String a) {
+        if (a.equals("Antikythera")) {
+            System.out.println("AK!");
+        }
+        else if (a.equals("Hello")) {
+            System.out.println("Hello!");
+        }
+        else {
+            System.out.println("Donno!");
+        }
+    }
+
+    public void clarendon(Tea cup) {
+        if (cup.getOrigin().equals("Clarendon")) {
+            System.out.println("good!");
+        }
+        else {
+            System.out.println("Not drinkable!");
         }
     }
 
