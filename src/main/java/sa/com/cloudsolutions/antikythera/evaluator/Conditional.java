@@ -271,14 +271,16 @@ public class Conditional {
     }
 
     public void fileCompare(File f) {
-        if (f.equals(new File("/tmp"))) {
-            System.out.println("tmp!");
-        }
         if (f == null) {
             System.out.println("Null!");
         }
         else {
-            System.out.println("Other!");
+            if (f.equals(new File("/tmp"))) {
+                System.out.println("tmp!");
+            }
+            else {
+                System.out.println("Other!");
+            }
         }
     }
 
