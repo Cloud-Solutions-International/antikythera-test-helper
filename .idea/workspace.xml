@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/Conditional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/Conditional.java" afterDir="false" />
-    </list>
+    <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,9 +53,22 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Tea">
+  <component name="RunManager" selected="Application.Noisy">
     <configuration name="Functional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Functional" />
+      <module name="antikythera-test-helper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.evaluator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Noisy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Noisy" />
       <module name="antikythera-test-helper" />
       <extension name="coverage">
         <pattern>
@@ -85,6 +95,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Noisy" />
         <item itemvalue="Application.Tea" />
         <item itemvalue="Application.Functional" />
       </list>
@@ -110,6 +121,7 @@
       <workItem from="1747961571738" duration="1547000" />
       <workItem from="1748000125315" duration="29549000" />
       <workItem from="1748706035361" duration="4502000" />
+      <workItem from="1748760122371" duration="3707000" />
     </task>
     <servers />
   </component>
