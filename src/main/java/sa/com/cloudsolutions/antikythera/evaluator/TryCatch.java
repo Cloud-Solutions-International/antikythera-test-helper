@@ -1,6 +1,6 @@
 package sa.com.cloudsolutions.antikythera.evaluator;
 
-
+@SuppressWarnings({"java:S106", "unused"})
 public class TryCatch {
     TryCatch() {
 
@@ -10,6 +10,8 @@ public class TryCatch {
         TryCatch tc = new TryCatch();
         tc.tryNPE();
         tc.nested();
+        System.out.println("Return value of callNPEmethod: " + tc.callNPEmethod());
+
     }
 
     public void nested() {
@@ -60,6 +62,26 @@ public class TryCatch {
         } finally {
             System.out.println("Finally block");
         }
+    }
+
+    public String hasNPE() {
+        String s = null;
+        if (s.equals("")) {
+            return "This will not be executed";
+        }
+        return "This will not be executed either";
+    }
+
+    public Integer callNPEmethod() {
+        try {
+            hasNPE();
+            return 1;
+        } catch (NullPointerException e) {
+            System.out.println("Caught an exception in callNPEmethod");
+        } finally {
+            System.out.println("Finally block in callNPEmethod");
+        }
+        return 2;
     }
 
     public static class CustomException extends Exception {
