@@ -7,6 +7,7 @@ import java.util.Set;
 /**
  * The majority of the tests involving this class are in TestRepository and TestMockingEvaluator
  */
+@SuppressWarnings("java:S106")
 public class FakeService {
     @Autowired
     private FakeRepository fakeRepository;
@@ -85,5 +86,15 @@ public class FakeService {
         List<FakeEntity> fakeEntities = fakeRepository.findAll();
         System.out.print(fakeEntities.size() + "!");
         return fakeEntities.size();
+    }
+
+    @SuppressWarnings("unused")
+    public void countItems() {
+        Integer a = fakeRepository.countItems(10, 20);
+        if (a == 0) {
+            System.out.print("No items!");
+        } else {
+            System.out.print("Found " + a + " item!");
+        }
     }
 }

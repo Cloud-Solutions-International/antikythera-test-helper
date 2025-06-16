@@ -13,4 +13,5 @@ public interface FakeRepository extends JpaRepository<FakeEntity, Integer>, JpaS
     List<FakeEntity> findAllByName(String name);
     Optional<Integer> findByListAndSet(List<Integer> a, Set<Integer> b);
 
+    Integer countItems(Integer a, Integer b);
 }

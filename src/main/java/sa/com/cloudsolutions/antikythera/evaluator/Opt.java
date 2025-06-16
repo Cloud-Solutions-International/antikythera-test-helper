@@ -3,6 +3,7 @@ package sa.com.cloudsolutions.antikythera.evaluator;
 import java.util.ArrayList;
 import java.util.Optional;
 
+@SuppressWarnings("unused")
 public class Opt {
     Optional<Integer> getById(int id) {
         if (id == 0) {
@@ -12,12 +13,10 @@ public class Opt {
         }
     }
 
-    @SuppressWarnings("unused")
     void ifPresent(int a) {
         getById(a).ifPresent(id -> System.out.println("ID: " + id));
     }
 
-    @SuppressWarnings("unused")
     void ifEmpty(int a) {
         getById(a).ifPresentOrElse(
             id -> System.out.println("ID: " + id),
