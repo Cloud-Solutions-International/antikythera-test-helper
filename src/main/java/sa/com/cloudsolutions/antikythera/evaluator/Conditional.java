@@ -367,6 +367,15 @@ public class Conditional {
         }
     }
 
+    public void whatInstance(Object a) {
+        if (a instanceof Integer i) {
+            System.out.println("Integer: " + i + "!");
+        }
+        else {
+            System.out.println("Unknown!");
+        }
+    }
+
     public static void main(String[] args) {
         Person p = new Person("Hello");
         p.setId(1);
