@@ -369,10 +369,10 @@ public class Conditional {
 
     public void whatInstance(Object a) {
         if (a instanceof Integer i) {
-            System.out.println("Integer: " + i + "!");
+            System.out.print("Integer: " + i + "!");
         }
         else {
-            System.out.println("Unknown!");
+            System.out.print("Unknown!");
         }
     }
 
