@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-@SuppressWarnings("java:S106")
+import org.springframework.util.StringUtils;
+
+@SuppressWarnings({"java:S106", "unused", "java:S1192"})
 public class Conditional {
     @SuppressWarnings("unused")
     public void conditional1(Person person) {
@@ -28,7 +30,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void conditional3(Person person) {
         if (person.getId() == 0) {
             System.out.print("ZERO!");
@@ -38,7 +39,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void conditional4(Person person) {
         if (person.getId() < 0) {
             System.out.print("Negative!");
@@ -51,7 +51,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void conditional5(int a) {
         if (a == 1) {
             System.out.print("One!");
@@ -67,7 +66,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void conditional6(double a) {
         if (a == 1.0) {
             System.out.print("One!");
@@ -83,7 +81,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void conditional7(Long a) {
         if (a == 1) {
             System.out.print("One!");
@@ -99,7 +96,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void conditional8(String a) {
         if (a.equals("1")) {
             System.out.print("One!");
@@ -115,7 +111,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void smallDiff(Double a) {
         if (a > 1.1) {
             System.out.print("Nearly 2!");
@@ -125,7 +120,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void booleanWorks(Boolean b) {
         if(b) {
             System.out.print("True!");
@@ -135,7 +129,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void switchCase1(int a) {
         switch(a) {
             case 1:
@@ -152,7 +145,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void emptiness1(List<Integer> list) {
         if (list.isEmpty()) {
             System.out.print("List is empty!");
@@ -162,7 +154,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void emptiness2(List<Integer> list) {
         if (list == null || list.isEmpty()) {
             System.out.print("List is empty!");
@@ -172,7 +163,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void emptiness3(List<Integer> list) {
         if (list != null && !list.isEmpty()) {
             System.out.print("List is not empty!");
@@ -182,7 +172,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void emptiness4(Set<Integer> set) {
         if (set != null && !set.isEmpty()) {
             System.out.print("Set is not empty!");
@@ -192,7 +181,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void emptiness5(Map<Integer, Integer> map) {
         if (map != null && !map.isEmpty()) {
             System.out.print("Map is not empty!");
@@ -202,7 +190,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public static void printMap(Map<Integer, Person> map) {
         if (map != null && !map.isEmpty()) {
             for (Map.Entry<Integer, Person> entry : map.entrySet()) {
@@ -214,7 +201,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public String nested(int a) {
         if (a >= 0) {
             if (a == 0) {
@@ -227,32 +213,26 @@ public class Conditional {
         return "Negative";
     }
 
-    @SuppressWarnings("unused")
     public String ternary1(String a) {
         return null == a ? "It is null!" : "It is not null!";
     }
 
-    @SuppressWarnings("unused")
     public String ternary2(String a) {
         return a == null ? "It is null!" : "It is not null!";
     }
 
-    @SuppressWarnings("unused")
     public void ternary3(String a) {
         System.out.println(a == null ? "It is null!" : "It is not null!");
     }
 
-    @SuppressWarnings("unused")
     public void ternary4(int a) {
         System.out.println(a == 1 || a == 2 ? "Small!" : "Big!");
     }
 
-    @SuppressWarnings("unused")
     public void ternary5(boolean a) {
         System.out.println(a ? "True!" : "False!");
     }
 
-    @SuppressWarnings("unused")
     public void multiVariate(int a, int b) {
         if (a == 0) {
             if (b == 0) {
@@ -326,7 +306,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void multiVariateDeep(int a, int b) {
         if (a == 0) { // 0
             System.out.println("A0!");
@@ -350,7 +329,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void animalFarm(Person a, Person b) {
         if (a.equals(b)) {
             System.out.print("All animals are equal!");
@@ -360,7 +338,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void cannotControl(int a, double b, String c) {
         if (System.currentTimeMillis() == 10000) {
             System.out.println("This condition cannot be met");
@@ -376,6 +353,33 @@ public class Conditional {
         }
     }
 
+    public void stringUtilsString(String a) {
+        if (StringUtils.isEmpty(a)) {
+            System.out.print("Empty!");
+        }
+        else {
+            System.out.print("Not empty!");
+        }
+    }
+
+    public void stringUtilsPerson(Person p) {
+        if (StringUtils.isEmpty(p.getName())) {
+            System.out.print("Empty!");
+        }
+        else {
+            System.out.print("Not empty!");
+        }
+    }
+
+    public void notStringUtilsPerson(Person p) {
+        if (!StringUtils.isEmpty(p.getName())) {
+            System.out.print("Not empty!");
+        }
+        else {
+            System.out.print("Empty!");
+        }
+    }
+
     public static void main(String[] args) {
         Person p = new Person("Hello");
         p.setId(1);
@@ -383,6 +387,5 @@ public class Conditional {
         Map<Integer, Person> map = new HashMap<>();
         map.put(1, p);
         printMap(map);
-
     }
 }

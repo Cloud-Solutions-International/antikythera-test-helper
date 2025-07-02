@@ -1,6 +1,6 @@
 package sa.com.cloudsolutions.antikythera.evaluator;
 
-public class Person implements IPerson {
+public class  Person implements IPerson {
     private int id;
     String name;
     private String address;
