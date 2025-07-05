@@ -6,9 +6,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
-@SuppressWarnings({"java:S106", "unused", "java:S1192"})
+@SuppressWarnings({"java:S106", "unused", "java:S1192","java:S1874", "java:S1172"})
 public class Conditional {
     @SuppressWarnings("unused")
     public void conditional1(Person person) {
@@ -377,6 +378,15 @@ public class Conditional {
         }
         else {
             System.out.print("Empty!");
+        }
+    }
+
+    public void collectionCheck(List<String> a) {
+        if (CollectionUtils.isEmpty(a)) {
+            System.out.print("Empty!");
+        }
+        else {
+            System.out.print("Not empty!");
         }
     }
 
