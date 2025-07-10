@@ -11,7 +11,9 @@ import org.springframework.util.StringUtils;
 
 @SuppressWarnings({"java:S106", "unused", "java:S1192","java:S1874", "java:S1172"})
 public class Conditional {
-    @SuppressWarnings("unused")
+    public static final String A = "A";
+    public static final String B = "B";
+    
     public void conditional1(Person person) {
         if (person.getName() != null) {
             System.out.print(person.getName() +"!");
@@ -21,7 +23,6 @@ public class Conditional {
         }
     }
 
-    @SuppressWarnings("unused")
     public void conditional2(Person person) {
         if (person.getName() == null) {
             System.out.print("The name is null!");
@@ -232,6 +233,10 @@ public class Conditional {
 
     public void ternary5(boolean a) {
         System.out.println(a ? "True!" : "False!");
+    }
+
+    public void ternary6(boolean a) {
+        System.out.println(a ? A : B);
     }
 
     public void multiVariate(int a, int b) {
