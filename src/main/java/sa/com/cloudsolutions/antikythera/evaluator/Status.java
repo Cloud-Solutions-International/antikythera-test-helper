@@ -16,19 +16,47 @@ public enum Status {
 
     public static void cmp1(Status s) {
         if (s.equals(OPEN)) {
-            System.out.println("OPEN!");
+            System.out.print("OPEN!");
         }
         else {
-            System.out.println("CLOSED!");
+            System.out.print("CLOSED!");
         }
     }
 
-    public static void cmp2(Status s) {
-        if (s == OPEN) {
-            System.out.println("OPEN!");
+    public static void cmp5(Status s) {
+        if (OPEN.equals(s)) {
+            System.out.print("OPEN!");
         }
         else {
-            System.out.println("CLOSED!");
+            System.out.print("CLOSED!");
+        }
+    }
+
+
+    public static void cmp2(Status s) {
+        if (s == OPEN) {
+            System.out.print("OPEN!");
+        }
+        else {
+            System.out.print("CLOSED!");
+        }
+    }
+
+    public static void cmp3(Status s) {
+        if (s != OPEN) {
+            System.out.print("CLOSED!");
+        }
+        else {
+            System.out.print("OPEN!");
+        }
+    }
+
+    public static void cmp4(Status s) {
+        if (OPEN == s) {
+            System.out.print("OPEN!");
+        }
+        else {
+            System.out.print("CLOSED!");
         }
     }
 
