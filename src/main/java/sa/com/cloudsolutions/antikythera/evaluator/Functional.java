@@ -11,6 +11,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+@SuppressWarnings({"java:S106","java:S4276", "unused"})
 public class Functional {
     Person a = new Person("A");
     Person b = new Person("B");
@@ -107,6 +108,11 @@ public class Functional {
     private void peopleArray1() {
         List<String> names = Arrays.stream(peopleArray).map(p -> p.getName()).toList();
         System.out.println(names);
+    }
+
+    private void peopleArray2() {
+        System.out.print(peopleArray[0].getName());
+        System.out.println(this.peopleArray[1].getName());
     }
 
     private void arraySort1() {
