@@ -386,6 +386,15 @@ public class Conditional {
         }
     }
 
+    public void enum1(Status s) {
+        if (s == Status.OPEN) {
+            System.out.print("OPEN!");
+        }
+        else {
+            System.out.print("CLOSED!");
+        }
+    }
+
     public void collectionCheck(List<String> a) {
         if (CollectionUtils.isEmpty(a)) {
             System.out.print("Empty!");

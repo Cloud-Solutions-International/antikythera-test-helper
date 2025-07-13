@@ -2,6 +2,7 @@ package sa.com.cloudsolutions.antikythera.evaluator;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -15,6 +16,7 @@ public class Functional {
     Person b = new Person("B");
     List<Person> people = List.of(a, b);
     private final List<Integer> numbers = new ArrayList<>(List.of(8,9,0,3,1,4,5,6,7,2));
+    private final Person[] peopleArray = { a, b };
 
     private void printHello(Function<String, String> f)
     {
@@ -96,6 +98,35 @@ public class Functional {
         System.out.println(p.getName());
     }
 
+    private void array0() {
+        int[] a =  {1,2,3,4,5};
+        List<Integer> list = Arrays.stream(a).boxed().toList();
+        System.out.println(list);
+    }
+
+    private void peopleArray1() {
+        List<String> names = Arrays.stream(peopleArray).map(p -> p.getName()).toList();
+        System.out.println(names);
+    }
+
+    private void arraySort1() {
+        int[] a = { 9, 3, 5, 4, 6, 7};
+        Arrays.sort(a);
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]);
+        }
+        System.out.println();
+    }
+
+    private void arraySort2() {
+        Object[] a = { 9, 3, 5, 4, 6, 7};
+        Arrays.sort(a);
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]);
+        }
+        System.out.println();
+    }
+
     private void maps1() {
         a.setId(25);
         b.setId(30);
@@ -172,7 +203,10 @@ public class Functional {
         f.sorting1();
         f.sorting2();
         System.out.println("People");
+        f.array0();
         f.people1();
+        System.out.println("People Array");
+        f.peopleArray1();
         f.people2();
         f.people3();
         f.people4();
@@ -184,6 +218,8 @@ public class Functional {
         f.staticMethodReference1();
         f.collectAgain();
         f.valueOf();
+        f.arraySort1();
+        f.arraySort2();
     }
 
 }
