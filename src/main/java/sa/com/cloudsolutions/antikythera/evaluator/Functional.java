@@ -74,6 +74,11 @@ public class Functional {
         System.out.println(names);
     }
 
+    private void people8() {
+        people.forEach(p -> System.out.print(p.getName()));
+        System.out.println();
+    }
+
     private void people4() {
         List<String> filtered = people.stream()
                 .filter(person -> person.getName().equals("A"))

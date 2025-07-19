@@ -3,6 +3,7 @@ package sa.com.cloudsolutions.antikythera.evaluator;
 /**
  * Note Cloneable to help test the InterfaceSolver
  */
+@SuppressWarnings({"unused","java:S106"})
 public class Hello implements  Cloneable{
     Integer field = 10;
 
@@ -26,6 +27,13 @@ public class Hello implements  Cloneable{
     public void helloChained(String name) {
         String a = name.toUpperCase().substring(1);
         System.out.println("Hello, " + a);
+    }
+
+    public void helloEnum1() {
+        System.out.println(Status.OPEN.getStatus());
+    }
+    public void helloEnum2() {
+        System.out.println(Status.CLOSED.getStatus());
     }
 
     public static void main(String[] args) {

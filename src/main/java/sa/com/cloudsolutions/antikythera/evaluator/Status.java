@@ -14,6 +14,10 @@ public enum Status {
         return status;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
     public static void cmp1(Status s) {
         if (s.equals(OPEN)) {
             System.out.print("OPEN!");
