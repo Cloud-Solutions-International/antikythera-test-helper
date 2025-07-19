@@ -36,9 +36,14 @@ public class Hello implements  Cloneable{
         System.out.println(Status.CLOSED.getStatus());
     }
 
+    public void helloEnum3() {
+        System.out.println(MultiFieldEnum.KARLA.getId() + " " + MultiFieldEnum.KARLA.getName());
+    }
+
     public static void main(String[] args) {
         Hello hello = new Hello();
         hello.longChain();
+        hello.helloEnum3();
     }
 
     @Override
