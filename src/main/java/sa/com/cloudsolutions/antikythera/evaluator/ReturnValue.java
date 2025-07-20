@@ -2,10 +2,10 @@ package sa.com.cloudsolutions.antikythera.evaluator;
 
 import java.io.Serializable;
 
+@SuppressWarnings("unused")
 public class ReturnValue implements Serializable {
     private int number = 10;
 
-    @SuppressWarnings("unused")
     public void printName() {
         System.out.println(getName());
     }
@@ -14,7 +14,6 @@ public class ReturnValue implements Serializable {
         return "John";
     }
 
-    @SuppressWarnings("unused")
     public void printNumberField() {
         System.out.println(getNumber());
     }
@@ -23,7 +22,6 @@ public class ReturnValue implements Serializable {
         return number;
     }
 
-    @SuppressWarnings("unused")
     public int returnConditionally() {
         if (number == 10) {
             return 10;
@@ -35,7 +33,6 @@ public class ReturnValue implements Serializable {
         return 11;
     }
 
-    @SuppressWarnings("unused")
     public int deepReturn() {
         if (number == 10) {
             number += 2;
@@ -53,6 +50,30 @@ public class ReturnValue implements Serializable {
         }
         System.out.println("C");
         return 10;
+    }
+
+    static String toUpper(String a) {
+        return a.toUpperCase();
+    }
+
+    static String toLower(String a) {
+        return a.toUpperCase();
+    }
+
+    static int first(int a, int b) {
+        return a + b;
+    }
+
+    public static void deepEnums() {
+        System.out.println(toLower(toUpper(MultiFieldEnum.KARLA.getName())) + first(MultiFieldEnum.KARLA.getId(), 1));
+    }
+
+    public static void deepCalls() {
+        System.out.println(toLower(toUpper("upper")) + first(1, 1));
+    }
+
+    public static void main(String[] args) {
+        deepEnums();
     }
 }
 
