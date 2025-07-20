@@ -68,12 +68,20 @@ public class ReturnValue implements Serializable {
         System.out.println(toLower(toUpper(MultiFieldEnum.KARLA.getName())) + first(MultiFieldEnum.KARLA.getId(), 1));
     }
 
+
+    public static void deepOCE(Integer a1, Double a2) {
+        System.out.print(
+                String.format("%s %d %g", new Person(
+                MultiFieldEnum.KARLA.getId(),
+                MultiFieldEnum.KARLA.getName(), "", "","" ) ,
+                        a1 , a2));
+    }
     public static void deepCalls() {
         System.out.println(toLower(toUpper("upper")) + first(1, 1));
     }
 
     public static void main(String[] args) {
-        deepEnums();
+        deepOCE(1, 2.0);
     }
 }
 
