@@ -68,6 +68,9 @@ public class ReturnValue implements Serializable {
         System.out.println(toLower(toUpper(MultiFieldEnum.KARLA.getName())) + first(MultiFieldEnum.KARLA.getId(), 1));
     }
 
+    public static void format() {
+        System.out.println(String.format("%s %d %g", "A", 1, 2.0));
+    }
 
     public static void deepOCE(Integer a1, Double a2) {
         System.out.print(
@@ -81,7 +84,7 @@ public class ReturnValue implements Serializable {
     }
 
     public static void main(String[] args) {
-        deepOCE(1, 2.0);
+        format();
     }
 }
 
