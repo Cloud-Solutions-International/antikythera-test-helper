@@ -2,7 +2,7 @@ package sa.com.cloudsolutions.antikythera.evaluator;
 
 import java.io.Serializable;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused","java:S106"})
 public class ReturnValue implements Serializable {
     private int number = 10;
 

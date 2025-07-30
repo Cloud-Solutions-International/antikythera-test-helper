@@ -4,9 +4,12 @@ package sa.com.cloudsolutions.antikythera.evaluator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -206,6 +209,41 @@ public class Functional {
                 .collect(Collectors.joining(" ")));
     }
 
+    private void streamForEach() {
+        numbers.stream().forEach(a -> System.out.print(a));
+        System.out.println();
+    }
+
+    private void streamForSet() {
+        Set<String> names = new HashSet<>(Set.of("A", "B", "C"));
+        names.stream().forEach(a ->{ System.out.print(a); });
+        System.out.println();
+    }
+
+    private void streamLongs1() {
+        Set<Long> longs = new HashSet<>(Set.of(1L, 2L, 3L));
+        longs.stream().forEach(a -> { System.out.print(a); });
+        System.out.println();
+    }
+
+    private void streamLongs2() {
+        Set<Long> longs = new HashSet<>(Set.of(1L, 2L, 3L));
+        longs.stream().forEach(a -> System.out.print(a) );
+        System.out.println();
+    }
+
+
+    private void streamLongs3(Set<Long> longs) {
+        longs.stream().forEach(a -> { System.out.print(a); });
+        System.out.println();
+    }
+
+    private void streamLongs4(Set<Long> longs) {
+        longs.stream().forEach(a ->System.out.print(a) );
+        System.out.println();
+    }
+
+
     public static void main(String[] args) {
         Functional f = new Functional();
         f.greet1();
@@ -231,6 +269,8 @@ public class Functional {
         f.valueOf();
         f.arraySort1();
         f.arraySort2();
+        f.streamForSet();
+        f.streamLongs2(Set.of(1L, 2L, 3L));
     }
 
 }
