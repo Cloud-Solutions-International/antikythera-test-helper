@@ -243,6 +243,11 @@ public class Functional {
         System.out.println();
     }
 
+    private void arraysAsList() {
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+        list.forEach(System.out::print);
+        System.out.println();
+    }
 
     public static void main(String[] args) {
         Functional f = new Functional();
@@ -270,7 +275,7 @@ public class Functional {
         f.arraySort1();
         f.arraySort2();
         f.streamForSet();
-        f.streamLongs2(Set.of(1L, 2L, 3L));
+        f.arraysAsList();
     }
 
 }
