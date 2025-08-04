@@ -1,0 +1,56 @@
+package sa.com.cloudsolutions.antikythera.evaluator;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+@SuppressWarnings({"java:S106","unused"})
+public class ConvertValue {
+    public static class Source {
+        private String name;
+        @JsonIgnore
+        private int age;
+
+        public String getName() {
+            return name;
+        }
+        public void setName(String name) {
+            this.name = name;
+        }
+        public int getAge() {
+            return age;
+        }
+        public void setAge(int age) {
+            this.age = age;
+        }
+    }
+
+    public static class Target {
+        private String name;
+        private int yearsOld;
+
+        public String getName() {
+            return name;
+        }
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
+
+    public static void main(String[] args) {
+        convert();
+    }
+
+    private static void convert() {
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        Source source = new Source();
+        source.name = "Alice";
+        source.age = 30;
+
+        // Convert SourceObject to TargetObject
+        Target target = objectMapper.convertValue(source, Target.class);
+
+        System.out.println("Name: " + target.name);
+        System.out.println("Years Old: " + target.yearsOld);
+    }
+}

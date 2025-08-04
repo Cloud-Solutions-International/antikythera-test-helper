@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="" />
+    <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/ConvertValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/Reflective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/Employee.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +27,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///usr/lib/jvm/java-21-amazon-corretto/lib/src.zip!/java.base/java/util/Arrays.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///usr/lib/jvm/java-21-amazon-corretto/lib/src.zip!/java.base/java/util/stream/IntStream.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -33,27 +44,46 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Functional.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Tea.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.diffblue.cover.intellij&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ConvertValue.executor": "Run",
+    "Application.Functional.executor": "Run",
+    "Application.Hello.executor": "Run",
+    "Application.Reflective.executor": "Run",
+    "Application.ReturnValue.executor": "Run",
+    "Application.Status.executor": "Run",
+    "Application.Tea.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.diffblue.cover.intellij",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Noisy">
+}]]></component>
+  <component name="RunManager" selected="Application.Reflective">
+    <configuration name="ConvertValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.ConvertValue" />
+      <module name="antikythera-test-helper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.evaluator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Functional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Functional" />
       <module name="antikythera-test-helper" />
@@ -67,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Noisy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Noisy" />
+    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Hello" />
       <module name="antikythera-test-helper" />
       <extension name="coverage">
         <pattern>
@@ -80,8 +110,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Tea" />
+    <configuration name="Reflective" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Reflective" />
+      <module name="antikythera-test-helper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.evaluator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReturnValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.ReturnValue" />
       <module name="antikythera-test-helper" />
       <extension name="coverage">
         <pattern>
@@ -95,17 +138,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Noisy" />
-        <item itemvalue="Application.Tea" />
+        <item itemvalue="Application.Reflective" />
+        <item itemvalue="Application.ConvertValue" />
         <item itemvalue="Application.Functional" />
+        <item itemvalue="Application.ReturnValue" />
+        <item itemvalue="Application.Hello" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -122,6 +167,25 @@
       <workItem from="1748000125315" duration="29549000" />
       <workItem from="1748706035361" duration="4502000" />
       <workItem from="1748760122371" duration="3707000" />
+      <workItem from="1750216356323" duration="4193000" />
+      <workItem from="1750521886563" duration="1231000" />
+      <workItem from="1750640273025" duration="1814000" />
+      <workItem from="1751093599973" duration="2469000" />
+      <workItem from="1751253228635" duration="4808000" />
+      <workItem from="1751385065755" duration="1711000" />
+      <workItem from="1751427126524" duration="2049000" />
+      <workItem from="1751511037990" duration="17082000" />
+      <workItem from="1751985750688" duration="10180000" />
+      <workItem from="1752285023041" duration="5903000" />
+      <workItem from="1752337459699" duration="11326000" />
+      <workItem from="1752391297878" duration="610000" />
+      <workItem from="1752408956230" duration="1200000" />
+      <workItem from="1752423124050" duration="11256000" />
+      <workItem from="1752996425519" duration="4186000" />
+      <workItem from="1753155329104" duration="4045000" />
+      <workItem from="1753836469865" duration="398000" />
+      <workItem from="1753836883733" duration="1317000" />
+      <workItem from="1753922419294" duration="17305000" />
     </task>
     <servers />
   </component>
@@ -144,8 +208,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/Functional.java</url>
-          <line>177</line>
+          <line>253</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/Functional.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/Functional.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

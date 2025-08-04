@@ -7,6 +7,7 @@ import java.io.Serializable;
 /**
  * Note Serializable to help test the InterfaceSolver
  */
+@SuppressWarnings("java:S106")
 public class Employee implements Serializable {
     ObjectMapper objectMapper = new ObjectMapper();
 
