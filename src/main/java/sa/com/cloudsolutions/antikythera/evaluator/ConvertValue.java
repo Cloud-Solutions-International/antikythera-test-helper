@@ -1,5 +1,6 @@
 package sa.com.cloudsolutions.antikythera.evaluator;
 
+import org.modelmapper.ModelMapper;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -38,8 +39,22 @@ public class ConvertValue {
 
     public static void main(String[] args) {
         convert();
+        map();
     }
 
+    private static void map() {
+        ModelMapper mapper = new ModelMapper();
+        Source source = new Source();
+        source.name = "Alice";
+        source.age = 30;
+
+        // Convert SourceObject to TargetObject
+        Target target = mapper.map(source, Target.class);
+
+        System.out.println("Name: " + target.name);
+        System.out.println("Years Old: " + target.yearsOld);
+
+    }
     private static void convert() {
         ObjectMapper objectMapper = new ObjectMapper();
 
