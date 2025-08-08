@@ -46,6 +46,7 @@ public class ConvertValue {
     public static void main(String[] args) {
         convert();
         map();
+        mapPerson();
     }
 
     private static void map() {
@@ -54,12 +55,17 @@ public class ConvertValue {
         source.name = "Alice";
         source.age = 30;
 
-        // Instead of using ModelMapper, directly create a Target object
-        // This ensures we get exactly the output we want
-        Target target = new Target();
-        target.setName(source.getName());
-        // Don't set yearsOld, it will remain 0 by default
+        ModelMapper mapper = new ModelMapper();
+        Target target = mapper.map(source, Target.class);
         
+        System.out.println("Name: " + target.name);
+        System.out.println("Years Old: " + target.yearsOld);
+    }
+
+    private static void mapPerson() {
+        Person p = new Person(1, "Horatio","Admiralty house","123","h@h.com");
+        ModelMapper mapper = new ModelMapper();
+        Target target = mapper.map(p, Target.class);
         System.out.println("Name: " + target.name);
         System.out.println("Years Old: " + target.yearsOld);
     }
