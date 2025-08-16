@@ -3,7 +3,6 @@ package sa.com.cloudsolutions.antikythera.testhelper.evaluator;
  * These unused imports are here to test imports!
  */
 import java.util.*;
-import sa.com.cloudsolutions.antikythera.evaluator.*;
 
 public class Nesting {
     String outerField = "Hello";
