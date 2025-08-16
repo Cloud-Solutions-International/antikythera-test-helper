@@ -1,4 +1,4 @@
-package sa.com.cloudsolutions.antikythera.testhelper.testhelper.generator;
+package sa.com.cloudsolutions.antikythera.testhelper.generator;
 
 public class DummyBase {
 }
