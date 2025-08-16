@@ -3,6 +3,7 @@ package sa.com.cloudsolutions.antikythera.testhelper.evaluator;
 import org.modelmapper.ModelMapper;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.modelmapper.TypeMap;
 
 @SuppressWarnings({"java:S106","unused"})
 public class ConvertValue {
