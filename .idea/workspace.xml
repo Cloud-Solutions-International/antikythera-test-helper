@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="">
+    <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="Update workspace configuration and recent items in RunManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Reflective.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Reflective.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,37 +40,43 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ConvertValue.executor": "Run",
-    "Application.Functional.executor": "Run",
-    "Application.Hello.executor": "Run",
-    "Application.Reflective.executor": "Run",
-    "Application.ReturnValue.executor": "Run",
-    "Application.Status.executor": "Run",
-    "Application.Tea.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/raditha/csi/antikythera-test-helper",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "com.diffblue.cover.intellij",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ConvertValue.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Functional.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Hello.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Reflective.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReturnValue.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Status.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tea.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/raditha/csi/Antikythera/antikythera-test-helper&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Reflective">
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="ConvertValue" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective">
     <configuration name="ConvertValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.ConvertValue" />
       <module name="antikythera-test-helper" />
@@ -85,19 +92,6 @@
     </configuration>
     <configuration name="Functional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Functional" />
-      <module name="antikythera-test-helper" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.evaluator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Hello" />
       <module name="antikythera-test-helper" />
       <extension name="coverage">
         <pattern>
@@ -135,21 +129,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
+      <module name="antikythera-test-helper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
+      <item itemvalue="Application.Functional" />
+      <item itemvalue="Application.Reflective" />
+      <item itemvalue="Application.ReturnValue" />
+      <item itemvalue="Application.ConvertValue" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Reflective" />
+        <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
         <item itemvalue="Application.ConvertValue" />
-        <item itemvalue="Application.Functional" />
         <item itemvalue="Application.ReturnValue" />
-        <item itemvalue="Application.Hello" />
+        <item itemvalue="Application.Reflective" />
+        <item itemvalue="Application.Functional" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -189,6 +203,14 @@
       <workItem from="1754711167784" duration="1406000" />
       <workItem from="1754715519479" duration="712000" />
       <workItem from="1755086923586" duration="1773000" />
+      <workItem from="1755915773722" duration="677000" />
+      <workItem from="1758507674705" duration="661000" />
+      <workItem from="1758510864280" duration="741000" />
+      <workItem from="1760232326747" duration="1297000" />
+      <workItem from="1760233727009" duration="2577000" />
+      <workItem from="1760257676853" duration="75000" />
+      <workItem from="1760367111245" duration="3685000" />
+      <workItem from="1760486721322" duration="1223000" />
     </task>
     <servers />
   </component>
