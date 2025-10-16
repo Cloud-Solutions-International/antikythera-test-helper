@@ -3,7 +3,6 @@ package sa.com.cloudsolutions.antikythera.testhelper.evaluator;
 import org.modelmapper.ModelMapper;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.modelmapper.TypeMap;
 
 @SuppressWarnings({"java:S106","unused"})
 public class ConvertValue {
@@ -11,6 +10,13 @@ public class ConvertValue {
         private String name;
         @JsonIgnore
         private int age;
+
+        public Source() {}
+
+        public Source(String name, int i) {
+            this.name = name;
+            this.age = i;
+        }
 
         public String getName() {
             return name;
@@ -45,8 +51,11 @@ public class ConvertValue {
     }
 
     public static void main(String[] args) {
+        System.out.println("convert");
         convert();
+        System.out.println("map");
         map();
+        System.out.println("mapPerson");
         mapPerson();
     }
 
@@ -58,17 +67,16 @@ public class ConvertValue {
 
         ModelMapper mapper = new ModelMapper();
         Target target = mapper.map(source, Target.class);
-        
-        System.out.println("Name: " + target.name);
-        System.out.println("Years Old: " + target.yearsOld);
+        System.out.println("Source: Name: " + source.name + "; Age: " + source.age);
+        System.out.println("Target: Name: " + target.name + "; Years Old: " + target.yearsOld);
     }
 
     private static void mapPerson() {
-        Person p = new Person(1, "Horatio","Admiralty house","123","h@h.com");
+        Source p = new Source("Alice",30);
         ModelMapper mapper = new ModelMapper();
         Target target = mapper.map(p, Target.class);
-        System.out.println("Name: " + target.name);
-        System.out.println("Years Old: " + target.yearsOld);
+        System.out.println("Source: Name: " + p.name + "; Age: " + p.age);
+        System.out.println("Target: Name: " + target.name + "; Years Old: " + target.yearsOld);
     }
     private static void convert() {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -80,7 +88,7 @@ public class ConvertValue {
         // Convert SourceObject to TargetObject
         Target target = objectMapper.convertValue(source, Target.class);
 
-        System.out.println("Name: " + target.name);
-        System.out.println("Years Old: " + target.yearsOld);
+        System.out.println("Source: Name: " + source.name + "; Age: " + source.age);
+        System.out.println("Target: Name: " + target.name + "; Years Old: " + target.yearsOld);
     }
 }
