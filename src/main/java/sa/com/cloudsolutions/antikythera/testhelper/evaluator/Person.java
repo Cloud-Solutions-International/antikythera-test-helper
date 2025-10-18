@@ -83,7 +83,14 @@ public class  Person implements IPerson {
     @SuppressWarnings("unused")
     public void setEmail(String email) {
         this.email = email;
-
     }
 
+    public void setCleanEmail(String email) {
+        if (email != null) {
+            String bada = email.trim();
+            this.email = bada.toLowerCase();
+        } else {
+            this.email = null;
+        }
+    }
 }

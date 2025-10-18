@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="Update workspace configuration and recent items in RunManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/ConvertValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/ConvertValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Locals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Locals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
     "Application.ConvertValue.executor": "Run",
     "Application.Functional.executor": "Run",
     "Application.Hello.executor": "Run",
+    "Application.Locals.executor": "Run",
     "Application.Reflective.executor": "Run",
     "Application.ReturnValue.executor": "Run",
     "Application.Status.executor": "Run",
@@ -91,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Reflective" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.Reflective" />
+    <configuration name="Locals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.Locals" />
       <module name="antikythera-test-helper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.evaluator.*" />
+          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,19 +146,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Locals" />
       <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.ConvertValue" />
       <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
-      <item itemvalue="Application.Reflective" />
       <item itemvalue="Application.ReturnValue" />
       <item itemvalue="Application.ConvertValue" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.ConvertValue" />
+        <item itemvalue="Application.Locals" />
         <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
         <item itemvalue="Application.ConvertValue" />
         <item itemvalue="Application.ReturnValue" />
-        <item itemvalue="Application.Reflective" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +213,7 @@
       <workItem from="1760233727009" duration="2577000" />
       <workItem from="1760257676853" duration="75000" />
       <workItem from="1760367111245" duration="3685000" />
-      <workItem from="1760486721322" duration="8909000" />
+      <workItem from="1760486721322" duration="15840000" />
     </task>
     <servers />
   </component>
