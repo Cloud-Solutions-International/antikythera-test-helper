@@ -1,5 +1,8 @@
 package sa.com.cloudsolutions.antikythera.testhelper.evaluator;
 
+import sa.com.cloudsolutions.antikythera.testhelper.model.FakeEntity;
+import sa.com.cloudsolutions.antikythera.testhelper.repository.FakeRepository;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;

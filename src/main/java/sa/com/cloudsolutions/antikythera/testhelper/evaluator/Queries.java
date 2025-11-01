@@ -1,5 +1,8 @@
 package sa.com.cloudsolutions.antikythera.testhelper.evaluator;
 
+import sa.com.cloudsolutions.antikythera.testhelper.model.FakeEntity;
+import sa.com.cloudsolutions.antikythera.testhelper.repository.FakeRepository;
+
 public class Queries {
     @Autowired
     FakeRepository fakeRepository;

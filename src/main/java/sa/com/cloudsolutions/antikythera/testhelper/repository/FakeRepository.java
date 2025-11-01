@@ -1,8 +1,9 @@
-package sa.com.cloudsolutions.antikythera.testhelper.evaluator;
+package sa.com.cloudsolutions.antikythera.testhelper.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
+import sa.com.cloudsolutions.antikythera.testhelper.model.FakeEntity;
 
 import java.util.List;
 import java.util.Optional;

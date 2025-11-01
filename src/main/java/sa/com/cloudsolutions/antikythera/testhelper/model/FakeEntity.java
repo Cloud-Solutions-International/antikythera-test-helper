@@ -1,4 +1,4 @@
-package sa.com.cloudsolutions.antikythera.testhelper.evaluator;
+package sa.com.cloudsolutions.antikythera.testhelper.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

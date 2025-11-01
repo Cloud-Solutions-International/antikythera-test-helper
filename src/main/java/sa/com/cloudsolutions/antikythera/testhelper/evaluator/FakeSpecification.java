@@ -6,6 +6,7 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
+import sa.com.cloudsolutions.antikythera.testhelper.model.FakeEntity;
 
 public class FakeSpecification implements Specification<FakeEntity> {
     @Override
