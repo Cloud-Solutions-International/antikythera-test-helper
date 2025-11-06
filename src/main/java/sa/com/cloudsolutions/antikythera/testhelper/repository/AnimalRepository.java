@@ -44,4 +44,5 @@ public interface AnimalRepository extends JpaRepository<Animal, Long> {
     // Complex query with multiple TYPE() conditions
     @Query("SELECT a FROM Animal a WHERE (TYPE(a) = Dog AND a.age > 5) OR (TYPE(a) = Cat AND a.age < 3)")
     List<Animal> findOldDogsOrYoungCats();
+
 }
