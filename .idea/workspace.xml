@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="Update workspace configuration and recent items in RunManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Locals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Locals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,39 +40,41 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ConvertValue.executor": "Run",
-    "Application.Functional.executor": "Run",
-    "Application.Hello.executor": "Run",
-    "Application.Locals.executor": "Run",
-    "Application.Reflective.executor": "Run",
-    "Application.ReturnValue.executor": "Run",
-    "Application.Status.executor": "Run",
-    "Application.Tea.executor": "Run",
-    "Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.ConvertValue.executor": "Run",
-    "Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/raditha/csi/Antikythera/antikythera-test-helper",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ConvertValue.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Functional.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Hello.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Locals.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Reflective.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReturnValue.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Status.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tea.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.ConvertValue.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/raditha/projects/hql-parser&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="ConvertValue" />
@@ -165,8 +166,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
       </set>
     </attachedChunks>
   </component>
@@ -214,6 +215,10 @@
       <workItem from="1760257676853" duration="75000" />
       <workItem from="1760367111245" duration="3685000" />
       <workItem from="1760486721322" duration="15840000" />
+      <workItem from="1761218406218" duration="622000" />
+      <workItem from="1761975106888" duration="2866000" />
+      <workItem from="1761986202437" duration="696000" />
+      <workItem from="1762002399647" duration="1182000" />
     </task>
     <servers />
   </component>
