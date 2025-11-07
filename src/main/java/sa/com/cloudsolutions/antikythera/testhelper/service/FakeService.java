@@ -105,4 +105,16 @@ public class FakeService {
             System.out.print("Found " + a + " item!");
         }
     }
+
+    public void deleteAll() {
+        fakeRepository.deleteAll();
+    }
+
+    public void deleteById() {
+        fakeRepository.deleteById(10);
+    }
+
+    public void deleteNoDelete() {
+        fakeRepository.deleteByNothing(10);
+    }
 }

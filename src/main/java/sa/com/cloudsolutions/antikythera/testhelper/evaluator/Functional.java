@@ -14,7 +14,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-@SuppressWarnings({"java:S106","java:S4276", "unused"})
+@SuppressWarnings({"java:S106","java:S4276", "unused","java:S1612","java:S1117","java:S1602"})
 public class Functional {
     Person a = new Person("A");
     Person b = new Person("B");
