@@ -1,7 +1,12 @@
 package sa.com.cloudsolutions.antikythera.testhelper.model;
 
+import java.util.List;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -20,6 +25,9 @@ public class User {
     private Boolean deleted;
     private Long balanceAmount;
     private Long totalAmount;
+
+    @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private List<Vehicle> vehicles;
 
     public Long getId() {
         return id;
@@ -115,5 +123,13 @@ public class User {
 
     public void setTotalAmount(Long totalAmount) {
         this.totalAmount = totalAmount;
+    }
+
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
+
+    public void setVehicles(List<Vehicle> vehicles) {
+        this.vehicles = vehicles;
     }
 }

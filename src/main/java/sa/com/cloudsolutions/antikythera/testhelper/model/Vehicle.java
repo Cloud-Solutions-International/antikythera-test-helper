@@ -13,6 +13,9 @@ public class Vehicle {
     private Integer year;
     private String color;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private User owner;
+
     public Long getId() {
         return id;
     }
@@ -43,5 +46,13 @@ public class Vehicle {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public User getOwner() {
+        return owner;
+    }
+
+    public void setOwner(User owner) {
+        this.owner = owner;
     }
 }
