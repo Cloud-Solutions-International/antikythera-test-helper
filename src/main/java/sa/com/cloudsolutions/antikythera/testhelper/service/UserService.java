@@ -1,5 +1,6 @@
 package sa.com.cloudsolutions.antikythera.testhelper.service;
 
+import sa.com.cloudsolutions.antikythera.testhelper.evaluator.Autowired;
 import sa.com.cloudsolutions.antikythera.testhelper.model.User;
 import sa.com.cloudsolutions.antikythera.testhelper.repository.UserRepository;
 
@@ -11,7 +12,10 @@ import java.util.Optional;
  * signatures change.
  * This class has UserRepository as a field and calls various methods on it.
  */
+
+@SuppressWarnings("unused")
 public class UserService {
+    @Autowired
     private UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {
@@ -61,6 +65,7 @@ public class UserService {
     /**
      * Multiple calls to the same method to test that all calls are updated.
      */
+    @SuppressWarnings("S106")
     public void processUsers(String firstName, String lastName) {
         // First call
         List<User> users1 = userRepository.findByFirstNameAndLastName(firstName, lastName);
