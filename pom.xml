@@ -13,6 +13,13 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <!-- Spring Data JPA -->
         <dependency>
@@ -57,9 +64,9 @@
         </dependency>
 
         <dependency>
-            <groupId>sa.com.cloudsolutions.antikythera</groupId>
-            <artifactId>field-access-agent</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.github.Cloud-Solutions-International</groupId>
+            <artifactId>antikythera-agent</artifactId>
+            <version>1.0.0.2</version>
             <scope>runtime</scope>
         </dependency>
     </dependencies>
@@ -71,7 +78,7 @@
                 <version>3.2.5</version> <!-- Use a recent version -->
                 <configuration>
                     <argLine>
-                        -javaagent:"${settings.localRepository}/sa/com/cloudsolutions/antikythera/field-access-agent/1.0.0/field-access-agent-1.0.0.jar"
+                        -javaagent:"${settings.localRepository}/com/github/Cloud-Solutions-International/antikythera-agent/1.0.0.2/antikythera-agent-1.0.0.2.jar"
                     </argLine>
                 </configuration>
             </plugin>
