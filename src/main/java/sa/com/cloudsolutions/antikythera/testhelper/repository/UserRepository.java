@@ -65,4 +65,10 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
     void deleteByUsername(String username);
     
     Long deleteByAgeGreaterThan(Integer age);
+
+    @Query("SELECT COUNT(*) FROM User u WHERE u.id = :id")
+    Long countUsers(Long id);
+
+    @Query("SELECT u FROM User u WHERE CASE WHEN u.firstName IN :firstNameList THEN 1 ELSE 0 END = 1")
+    List<User> findByStatusIn(List<String> firstNameList);
 }
