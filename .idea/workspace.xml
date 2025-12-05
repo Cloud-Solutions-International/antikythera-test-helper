@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="Update workspace configuration and recent items in RunManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/raditha/projects/hql-parser&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/raditha/csi/Antikythera/hql-parser&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -99,7 +98,20 @@
       <module name="antikythera-test-helper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.*" />
+          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reflective" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
+      <module name="antikythera-test-helper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,20 +137,7 @@
       <module name="antikythera-test-helper" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
-      <module name="antikythera-test-helper" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.*" />
+          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,9 +146,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Reflective" />
       <item itemvalue="Application.Locals" />
       <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.ConvertValue" />
-      <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
       <item itemvalue="Application.ReturnValue" />
       <item itemvalue="Application.ConvertValue" />
     </list>
@@ -157,7 +156,6 @@
       <list>
         <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.ConvertValue" />
         <item itemvalue="Application.Locals" />
-        <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
         <item itemvalue="Application.ConvertValue" />
         <item itemvalue="Application.ReturnValue" />
       </list>
@@ -166,8 +164,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -219,6 +217,14 @@
       <workItem from="1761975106888" duration="2866000" />
       <workItem from="1761986202437" duration="696000" />
       <workItem from="1762002399647" duration="1182000" />
+      <workItem from="1762447457852" duration="316000" />
+      <workItem from="1762447807812" duration="6256000" />
+      <workItem from="1762477420906" duration="705000" />
+      <workItem from="1762650371257" duration="1197000" />
+      <workItem from="1763571930929" duration="2640000" />
+      <workItem from="1763865726008" duration="117000" />
+      <workItem from="1763865853374" duration="32000" />
+      <workItem from="1764424590449" duration="998000" />
     </task>
     <servers />
   </component>
@@ -256,5 +262,13 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
