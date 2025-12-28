@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad43bc41-2253-4487-82a8-ca91e1f9bc67" name="Changes" comment="Update workspace configuration and recent items in RunManager">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/depsolver/ArrayAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sa/com/cloudsolutions/antikythera/testhelper/generator/DummyBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/generator/DummyBase.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Anon.executor&quot;: &quot;Run&quot;,
     &quot;Application.ConvertValue.executor&quot;: &quot;Run&quot;,
     &quot;Application.Functional.executor&quot;: &quot;Run&quot;,
     &quot;Application.Hello.executor&quot;: &quot;Run&quot;,
@@ -79,7 +83,20 @@
       <command value="ConvertValue" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.ConvertValue">
+  <component name="RunManager" selected="Application.Anon">
+    <configuration name="Anon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.Anon" />
+      <module name="antikythera-test-helper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConvertValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.evaluator.ConvertValue" />
       <module name="antikythera-test-helper" />
@@ -95,19 +112,6 @@
     </configuration>
     <configuration name="Locals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.Locals" />
-      <module name="antikythera-test-helper" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sa.com.cloudsolutions.antikythera.testhelper.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Reflective" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sa.com.cloudsolutions.antikythera.testhelper.evaluator.Reflective" />
       <module name="antikythera-test-helper" />
       <extension name="coverage">
         <pattern>
@@ -146,7 +150,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Reflective" />
+      <item itemvalue="Application.Anon" />
       <item itemvalue="Application.Locals" />
       <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.ConvertValue" />
       <item itemvalue="Application.ReturnValue" />
@@ -154,6 +158,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Anon" />
         <item itemvalue="Application.sa.com.cloudsolutions.antikythera.testhelper.evaluator.ConvertValue" />
         <item itemvalue="Application.Locals" />
         <item itemvalue="Application.ConvertValue" />
@@ -225,6 +230,8 @@
       <workItem from="1763865726008" duration="117000" />
       <workItem from="1763865853374" duration="32000" />
       <workItem from="1764424590449" duration="998000" />
+      <workItem from="1766667014289" duration="835000" />
+      <workItem from="1766680652203" duration="56000" />
     </task>
     <servers />
   </component>
@@ -259,6 +266,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/evaluator/Functional.java</url>
           <line>131</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sa/com/cloudsolutions/antikythera/testhelper/evaluator/Anon.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
