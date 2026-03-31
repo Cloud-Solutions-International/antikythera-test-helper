@@ -148,4 +148,39 @@ public class FunctionalStream {
         List<Integer> ints = List.of(1, 2);
         return ints.stream().mapToInt(n -> n).boxed().toList();
     }
+
+    public static void main(String[] args) {
+        FunctionalStream fs = new FunctionalStream();
+        
+        System.out.println("=== P1: Intermediate Operations ===");
+        System.out.println("streamMap: " + fs.streamMap());
+        System.out.println("streamFilter: " + fs.streamFilter());
+        System.out.println("streamCount: " + fs.streamCount());
+        System.out.println("streamFindFirst: " + fs.streamFindFirst());
+        System.out.println("streamAnyMatch: " + fs.streamAnyMatch());
+        System.out.println("streamAllMatch: " + fs.streamAllMatch());
+        System.out.println("streamNoneMatch: " + fs.streamNoneMatch());
+        System.out.println("streamMin: " + fs.streamMin());
+        System.out.println("streamMax: " + fs.streamMax());
+        System.out.println("streamReduce: " + fs.streamReduce());
+        System.out.println("streamReduceWithIdentity: " + fs.streamReduceWithIdentity());
+        System.out.println("streamLimit: " + fs.streamLimit());
+        System.out.println("streamSkip: " + fs.streamSkip());
+        System.out.println("streamDistinct: " + fs.streamDistinct());
+        System.out.println("streamFlatMap: " + fs.streamFlatMap());
+        System.out.println("streamSorted: " + fs.streamSorted());
+        System.out.println("streamSortedWithComparator: " + fs.streamSortedWithComparator());
+        
+        System.out.println("\n=== P3: Additional Collectors ===");
+        System.out.println("groupBy: " + fs.groupBy());
+        System.out.println("groupByWithCount: " + fs.groupByWithCount());
+        System.out.println("partitionByPredicate: " + fs.partitionByPredicate());
+        System.out.println("collectToSet: " + fs.collectToSet());
+        
+        System.out.println("\n=== P4: Primitive Specialized Streams ===");
+        System.out.println("intStreamRange: " + fs.intStreamRange());
+        System.out.println("mapToIntSum: " + fs.mapToIntSum());
+        System.out.println("mapToLongSum: " + fs.mapToLongSum());
+        System.out.println("mapToIntBoxed: " + fs.mapToIntBoxed());
+    }
 }
