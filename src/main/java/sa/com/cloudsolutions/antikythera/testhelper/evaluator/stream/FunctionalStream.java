@@ -149,6 +149,66 @@ public class FunctionalStream {
         return ints.stream().mapToInt(n -> n).boxed().toList();
     }
 
+    // --- Parameter-based stream source tests ---
+    // These methods take their stream source as a method parameter so that
+    // DummyArgumentGenerator supplies the collection (an empty ArrayList).
+    // They verify that the dispatch path works even when the source is not a field.
+
+    private List<String> streamMapFromParam(List<String> input) {
+        return input.stream().map(s -> s.toLowerCase()).toList();
+    }
+
+    private List<String> streamFilterFromParam(List<String> input) {
+        return input.stream().filter(s -> !s.isEmpty()).toList();
+    }
+
+    private long streamCountFromParam(List<String> input) {
+        return input.stream().count();
+    }
+
+    // --- Missing intermediate operation: peek ---
+
+    private List<String> streamPeek() {
+        return names.stream().peek(s -> {}).map(s -> s.toLowerCase()).toList();
+    }
+
+    // --- Missing primitive stream: mapToDouble ---
+
+    private double mapToDoubleSum() {
+        return numbers.stream().mapToDouble(n -> n * 1.5).sum();
+    }
+
+    // --- IntStream.forEach bug-fix verification ---
+    // The forEach on a primitive stream previously used toStreamFunction (wrong adapter).
+    // This method proves the fix: forEach must not throw, then sum confirms the stream works.
+
+    private int intStreamForEach() {
+        IntStream.range(1, 4).forEach(n -> {});
+        return IntStream.range(1, 4).sum();
+    }
+
+    // --- Primitive stream intermediate operations ---
+
+    private int intStreamFilter() {
+        return IntStream.rangeClosed(1, 4).filter(n -> n > 2).sum();
+    }
+
+    private int intStreamMap() {
+        return IntStream.rangeClosed(1, 4).map(n -> n + 10).sum();
+    }
+
+    private List<Integer> intStreamSorted() {
+        // mapToInt on a descending list, then sort ascending
+        List<Integer> descending = new ArrayList<>(List.of(3, 2, 1));
+        return descending.stream().mapToInt(n -> n).sorted().boxed().toList();
+    }
+
+    // --- Primitive stream reduce ---
+
+    private int intStreamReduce() {
+        return IntStream.rangeClosed(1, 4).reduce(0, (a, b) -> a + b);
+    }
+
     public static void main(String[] args) {
         FunctionalStream fs = new FunctionalStream();
         
