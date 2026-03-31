@@ -92,6 +92,19 @@ public class Opt {
         System.out.println(optionalInput.toUpperCase());
     }
 
+    /** Direct empty Optional chains (evaluator short-circuit on empty). */
+    boolean emptyOptionalIsPresent() {
+        return Optional.empty().isPresent();
+    }
+
+    boolean emptyOptionalIsEmpty() {
+        return Optional.empty().isEmpty();
+    }
+
+    String emptyOptionalOrElseString() {
+        return Optional.<String>empty().orElse("fallback");
+    }
+
     public static void main(String[] args) {
         Opt opt = new Opt();
         System.out.println(opt.flatMapToString(1));
