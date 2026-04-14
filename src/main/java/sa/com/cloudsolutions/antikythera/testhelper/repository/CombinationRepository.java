@@ -12,6 +12,4 @@ public interface CombinationRepository {
     List<BranchingCombinations.ProblemRecord> findAllRecords();
 
     List<BranchingCombinations.ProblemRecord> findOpenRecords();
-
-    BranchingCombinations.DoctorDirectoryEntry lookup();
 }

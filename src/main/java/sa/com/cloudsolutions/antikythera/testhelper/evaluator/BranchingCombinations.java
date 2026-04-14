@@ -1,21 +1,21 @@
 package sa.com.cloudsolutions.antikythera.testhelper.evaluator;
 
 import org.springframework.util.CollectionUtils;
-import org.springframework.stereotype.Repository;
-import sa.com.cloudsolutions.antikythera.testhelper.model.FakeEntity;
-import sa.com.cloudsolutions.antikythera.testhelper.repository.FakeRepository;
+import sa.com.cloudsolutions.antikythera.testhelper.repository.CombinationRepository;
 
 import java.util.List;
 
 @SuppressWarnings({"java:S106", "unused", "java:S1192"})
 public class BranchingCombinations {
 
-    private final FakeRepository repository;
+    private final CombinationRepository repository;
+    private final DoctorDirectory directory;
     private ProblemQuery query;
     private List<String> values;
 
-    public BranchingCombinations(FakeRepository repository) {
+    public BranchingCombinations(CombinationRepository repository, DoctorDirectory directory) {
         this.repository = repository;
+        this.directory = directory;
     }
 
     public void sequentialDirect() {
@@ -50,34 +50,43 @@ public class BranchingCombinations {
         }
     }
 
-    public void sequentialProblemStrings(Integer id) {
-        List<String> active = repository.findActive(id);
-        List<String> byDiagnosis = repository.findSleeping(id);
-
-        if (!CollectionUtils.isEmpty(active)) {
-            System.out.println("Found active records");
+    public void sequentialProblemStrings(Long id) {
+        String diagnosisType = query.getDiagnosisType();
+        List<String> results;
+        if (diagnosisType == null || diagnosisType.isEmpty()) {
+            results = repository.findActive(id, true, false);
+        } else {
+            results = repository.findActiveByDiagnosisType(id, true, false, diagnosisType);
         }
 
-        if (!CollectionUtils.isEmpty(byDiagnosis)) {
-            System.out.println("Found diagnosis records");
+        if (!CollectionUtils.isEmpty(results)) {
+            System.out.println("Found active records");
+        } else {
+            System.out.println("No active records");
         }
     }
 
-    public void deletedByLookup(Integer id) {
-        List<FakeEntity> allRecords = repository.findAll();
-        List<FakeEntity> openRecords = repository.findAllByName("name");
-        FakeEntity entry = repository.findById(id).orElse(null);
+    public void deletedByLookup() {
+        List<ProblemRecord> allRecords = repository.findAllRecords();
+        List<ProblemRecord> openRecords = repository.findOpenRecords();
+        DoctorDirectoryEntry entry = directory.lookup();
 
         if (!CollectionUtils.isEmpty(allRecords)) {
             System.out.println("All records found");
         }
 
         if (!CollectionUtils.isEmpty(openRecords)) {
-            System.out.println("Open records found");
+            ProblemRecord pr = openRecords.get(0);
+            String deletedBy = pr.getDeletedBy();
+            if (deletedBy != null && !deletedBy.isEmpty()) {
+                System.out.println("DELETED");
+            } else {
+                System.out.println("ACTIVE");
+            }
         }
 
         if (entry != null) {
-            System.out.println("Directory entry found");
+            System.out.println("Directory entry found: " + entry.getName());
         }
     }
 
