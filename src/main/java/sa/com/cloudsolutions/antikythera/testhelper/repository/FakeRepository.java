@@ -22,4 +22,7 @@ public interface FakeRepository extends JpaRepository<FakeEntity, Integer>, JpaS
     void deleteByNothing(@Param("id") long id);
 
     Integer countItems(Integer a, Integer b);
+
+    List<String> findActive(long id);
+    List<String> findSleeping(long id);
 }

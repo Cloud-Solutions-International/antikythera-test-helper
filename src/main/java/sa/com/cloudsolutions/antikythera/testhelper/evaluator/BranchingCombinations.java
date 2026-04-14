@@ -2,17 +2,19 @@ package sa.com.cloudsolutions.antikythera.testhelper.evaluator;
 
 import org.springframework.util.CollectionUtils;
 import org.springframework.stereotype.Repository;
+import sa.com.cloudsolutions.antikythera.testhelper.model.FakeEntity;
+import sa.com.cloudsolutions.antikythera.testhelper.repository.FakeRepository;
 
 import java.util.List;
 
 @SuppressWarnings({"java:S106", "unused", "java:S1192"})
 public class BranchingCombinations {
 
-    private final CombinationRepository repository;
+    private final FakeRepository repository;
     private ProblemQuery query;
     private List<String> values;
 
-    public BranchingCombinations(CombinationRepository repository) {
+    public BranchingCombinations(FakeRepository repository) {
         this.repository = repository;
     }
 
@@ -31,14 +33,14 @@ public class BranchingCombinations {
         }
     }
 
-    public void deletedByDirect(ProblemRecord record) {
-        String source = record.getSource();
-        String deletedBy = record.getDeletedBy();
+    public void deletedByDirect(ProblemRecord pr) {
+        String source = pr.getSource();
+        String deletedBy = pr.getDeletedBy();
 
         if ("ALL".equals(source) || "OPEN".equals(source)) {
             System.out.println(source);
         } else {
-            System.out.println("OPEN");
+            System.out.println("CLOSED");
         }
 
         if (deletedBy != null && !deletedBy.isEmpty()) {
@@ -48,9 +50,9 @@ public class BranchingCombinations {
         }
     }
 
-    public void sequentialProblemStrings(Long id) {
-        List<String> active = repository.findActive(id, true, true);
-        List<String> byDiagnosis = repository.findActiveByDiagnosisType(id, true, true, "test");
+    public void sequentialProblemStrings(Integer id) {
+        List<String> active = repository.findActive(id);
+        List<String> byDiagnosis = repository.findSleeping(id);
 
         if (!CollectionUtils.isEmpty(active)) {
             System.out.println("Found active records");
@@ -61,10 +63,10 @@ public class BranchingCombinations {
         }
     }
 
-    public void deletedByLookup(Long id) {
-        List<ProblemRecord> allRecords = repository.findAllRecords();
-        List<ProblemRecord> openRecords = repository.findOpenRecords();
-        DoctorDirectoryEntry entry = repository.lookup();
+    public void deletedByLookup(Integer id) {
+        List<FakeEntity> allRecords = repository.findAll();
+        List<FakeEntity> openRecords = repository.findAllByName("name");
+        FakeEntity entry = repository.findById(id).orElse(null);
 
         if (!CollectionUtils.isEmpty(allRecords)) {
             System.out.println("All records found");
@@ -140,13 +142,4 @@ public class BranchingCombinations {
     public void setValues(List<String> values) {
         this.values = values;
     }
-}
-
-@Repository
-interface CombinationRepository {
-    List<String> findActive(Long id, boolean active, boolean deleted);
-    List<String> findActiveByDiagnosisType(Long id, boolean active, boolean deleted, String diagnosisType);
-    List<ProblemRecord> findAllRecords();
-    List<ProblemRecord> findOpenRecords();
-    DoctorDirectoryEntry lookup();
 }
