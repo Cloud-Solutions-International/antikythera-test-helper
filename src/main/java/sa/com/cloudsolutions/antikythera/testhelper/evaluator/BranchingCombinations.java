@@ -21,9 +21,9 @@ public class BranchingCombinations {
     public void sequentialDirect() {
         String diagnosisType = query.getDiagnosisType();
         if ("TYPE_SET".equals(diagnosisType)) {
-            System.out.println("TYPE_SET");
+            System.out.print("TYPE_SET|");
         } else {
-            System.out.println("TYPE_EMPTY");
+            System.out.print("TYPE_EMPTY|");
         }
 
         if (CollectionUtils.isEmpty(values)) {
@@ -38,9 +38,9 @@ public class BranchingCombinations {
         String deletedBy = pr.getDeletedBy();
 
         if ("ALL".equals(source) || "OPEN".equals(source)) {
-            System.out.println(source);
+            System.out.print(source + "|");
         } else {
-            System.out.println("CLOSED");
+            System.out.print("CLOSED|");
         }
 
         if (deletedBy != null && !deletedBy.isEmpty()) {
